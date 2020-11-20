@@ -1,0 +1,18 @@
+N = int(input())
+
+hundred = int(N/100)
+fifty = int((N%100)/50)
+twenty = int(((N%100)%50)/20)
+ten = int((((N%100)%50)%20)/10)
+five = int(((((N%100)%50)%20)%10)/5)
+two = int((((((N%100)%50)%20)%10)%5)/2)
+one = int(((((((N%100)%50)%20)%10)%5)%2)/1)
+
+print(N)
+print(hundred,'nota(s) de R$ 100,00')
+print(fifty,'nota(s) de R$ 50,00')
+print(twenty,'nota(s) de R$ 20,00')
+print(ten,'nota(s) de R$ 10,00')
+print(five,'nota(s) de R$ 5,00')
+print(two,'nota(s) de R$ 2,00')
+print(one,'nota(s) de R$ 1,00')
